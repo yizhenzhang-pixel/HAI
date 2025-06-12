@@ -69,14 +69,6 @@ python main.py
 
 系统将提示选择模式、读取辩题并自动生成辩论内容。
 
-#### 或使用特定脚本快速运行：
-
-```bash
-python debate_runner.py
-python roundtable_runner.py
-```
-
----
 
 ## ✨ 输出样例（HTML 格式）
 
