@@ -1,8 +1,8 @@
 import requests
 
 # AI摘要接口配置
-DEEPSEEK_API_KEY = "sk-pfkropedfcqdxvelnszzcqhceozpmlsodqiqsfdedcbeurpw"
-DEEPSEEK_BASE_URL = "https://api.siliconflow.cn/v1/chat/completions"
+DEEPSEEK_API_KEY = ""  # 换成你的key
+DEEPSEEK_BASE_URL = "https://api.siliconflow.cn/v1/chat/completions" # 可替换其它API调用网站
 
 def generate_summary(article_list, use_ai=True):
     # 适配两种结构：dict（旧）或 list（新）
@@ -45,7 +45,7 @@ def generate_summary(article_list, use_ai=True):
     }
 
     payload = {
-        "model": "deepseek-ai/DeepSeek-V3",
+        "model": "deepseek-ai/DeepSeek-V3",  #可替换其它模型
         "messages": [
             {"role": "system", "content": "你是一个优秀的中文新闻导览写手。"},
             {"role": "user", "content": prompt}
